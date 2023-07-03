@@ -11,39 +11,43 @@
   </head>
   <body>
     <!-- Таблицы -->
-    <!-- Доступность таблиц -->
+    <!-- Colspan - Объединение колонок между собой
+        Rowspan - Объединение строк между собой-->
     <table>
       <caption>
         Таблица расходов
       </caption>
       <thead>
         <tr>
-          <th>Статься</th>
-          <th>Сумма</th>
-          <th>Валюта</th>
+          <th rowspan="2">Статья</th>
+          <th colspan="2">Сумма</th>
+        </tr>
+        <tr>
+          <th>rub</th>
+          <th>$</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Зарплата</td>
           <td>100 000</td>
-          <td>rub.</td>
+          <td>2 000</td>
         </tr>
         <tr>
           <td>Сервисы</td>
           <td>50 000</td>
-          <td>rub.</td>
+          <td>700</td>
         </tr>
         <tr>
           <td>Еда</td>
           <td>30 000</td>
-          <td>rub.</td>
+          <td>500</td>
         </tr>
       </tbody>
       <tfoot>
         <td>Итог</td>
         <td>180 000</td>
-        <td>rub.</td>
+        <td>3 000</td>
       </tfoot>
     </table>
   </body>
