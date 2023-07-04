@@ -11,32 +11,44 @@
   </head>
   <body>
     <!-- Формы -->
-    <!-- Form  - объединяет в себе элементы ввода: input, checkbox, radio и др.
-        1. Визуально не отображается
-        2. Представляет "интерауктивную часть"б куда можно вводить и отправлять данные
-        3. Позволяет определить метод отправки
-    -->
+    <!-- Label   -->
     <form
       action="/test"
       method="get"
     >
+      <label for="email">Введите email</label>
       <input
         type="email"
         placeholder="Email пользователя "
+        id="email"
       />
+      <label for="password">Введите пароль</label>
       <input
         type="password"
         placeholder="Пароль пользователя "
+        id="password"
       />
+      <label for="date">Введите дату рождения</label>
       <input
         type="date"
         placeholder="Дата рождения пользователя"
+        id="date"
       />
+      <label for="text">Введите текс</label>
       <input
         type="text"
         placeholder="Текст"
+        id="text"
       />
       <input type="color" />
+      <!-- Другой вариант связки label и input -->
+      <label>
+        Введите текст
+        <input
+          type="text"
+          placeholder="Введите Текст"
+        />
+      </label>
     </form>
   </body>
 </html>
