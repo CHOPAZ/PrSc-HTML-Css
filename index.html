@@ -36,9 +36,9 @@
       />
       <label for="text">Введите текс</label>
       <input
-        type="text"
         placeholder="Текст"
         id="text"
+        type="text"
       />
       <input type="color" />
       <!-- Другой вариант связки label и input -->
@@ -49,6 +49,31 @@
           placeholder="Введите Текст"
         />
       </label>
+      <button>Отправить</button>
+      <!-- Отправит всю форму на /test -->
+      <!-- Атрибуты кнопок -->
+      <!--  type="button" Перестанет отправлять форму, поведение обычной кнопки вне формы -->
+      <button type="button">1</button>
+      <!-- type="submit" - дефолтное поведение кнопки -->
+      <button type="submit">2</button>
+      <!-- type="reset" - сброс формы -->
+      <button type="reset">3</button>
     </form>
+    <button>Отправить вне формы</button>
+    <!-- Если нажать ничего не произойдет -->
+
+    <!-- Альтернативный путь создания кнопки (альтернативно <button type="button"></button> ) -->
+    <input
+      type="button"
+      value="Кнопка 2"
+    />
+    <input
+      type="submit"
+      value="Кнопка 2"
+    />
+    <!-- Минусы использования input как кнопки:
+      1. Передавать текст в качестве value
+      2. Нельзя добавить иконку или изображение кнопке
+    -->
   </body>
 </html>
