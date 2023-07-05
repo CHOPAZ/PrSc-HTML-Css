@@ -11,60 +11,25 @@
   </head>
   <body>
     <!-- Формы -->
-    <!-- Name - определяет передачу в дальнейшем данных куда-либо еще  -->
+    <!-- Упражнение - поиск на YouTube  -->
+    <!-- методы form
+      get - по умолчанию,
+
+    -->
     <form
-      action="/test"
+      action="https://www.youtube.com/results"
       method="get"
     >
-      <input
-        type="hidden"
-        name="hid"
-      />
-      <!-- Когда нажмем на кнопку Отправить получим такой путь:
-        http://127.0.0.1:5500/test?hidden=&email=&password=&date=&color=
-      -->
-      <!-- Когда нажмет на кнопку Отправить с заполненными инпутами:
-        http://127.0.0.1:5500/test?hid=&email=paxa0079%40yandex.ru&password=asd&date=2023-07-03&color=asd
-      -->
-      <!-- Записать значение в input можно с помощью атрибута value="" -->
-      <label for="email">Введите email</label>
-      <input
-        type="email"
-        placeholder="Email пользователя "
-        id="email"
-        name="email"
-        value="a@a.ru"
-      />
-      <label for="password">Введите пароль</label>
-      <input
-        type="password"
-        placeholder="Пароль пользователя "
-        id="password"
-        name="password"
-      />
-      <label for="date">Введите дату рождения</label>
-      <input
-        type="date"
-        placeholder="Дата рождения пользователя"
-        id="date"
-        name="date"
-      />
-      <label for="text">Введите текс</label>
-      <input
-        placeholder="Текст"
-        id="text"
-        type="text"
-        name="color"
-      />
-      <input type="color" />
-      <label>
-        Введите текст
+      <div>
+        <label for="query"> Введите запрос </label>
         <input
           type="text"
-          placeholder="Введите Текст"
+          name="search_query"
+          id="query"
+          placeholder="Запрос..."
         />
-      </label>
-      <button>Отправить</button>
+      </div>
+      <button>Искать на YouTube</button>
     </form>
   </body>
 </html>
