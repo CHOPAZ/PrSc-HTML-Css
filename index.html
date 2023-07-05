@@ -11,7 +11,10 @@
   </head>
   <body>
     <!-- Формы -->
-    <!-- Range  -->
+    <!-- Textarea - многострочное поле ввода 
+      rows - максимальное число строк
+      cols - количество колонок
+    -->
 
     <form
       action="#"
@@ -101,6 +104,16 @@
           max="10"
           step="2"
         />
+      </div>
+      <div>
+        <label for="text">Комментарий</label>
+        <textarea
+          name="text"
+          id="text"
+          rows="5"
+          cols="15"
+          placeholder="Введите текс"
+        ></textarea>
       </div>
       <button>Искать на YouTube</button>
     </form>
