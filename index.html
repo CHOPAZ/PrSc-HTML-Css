@@ -11,13 +11,12 @@
   </head>
   <body>
     <!-- Формы -->
-    <!-- Упражнение - поиск на YouTube  -->
-    <!-- методы form
-      get - по умолчанию,
-
+    <!-- Radio, Checkbox, Select  -->
+    <!-- Если отправим форму получим следующий путь:
+      http://127.0.0.1:5500/index.html?search_query=&agree=on#
     -->
     <form
-      action="https://www.youtube.com/results"
+      action="#"
       method="get"
     >
       <div>
@@ -28,6 +27,60 @@
           id="query"
           placeholder="Запрос..."
         />
+      </div>
+      <!-- CheckBox - независимо можно выбрать несколько штук -->
+      <div>
+        <label for="agree">Согласен</label>
+        <input
+          type="checkbox"
+          name="agree"
+          id="agree"
+        />
+      </div>
+      <!-- Radio - группа радиокнопок, позволяет выбрать что-то одно -->
+      <div>
+        <input
+          type="radio"
+          name="search"
+          id="all"
+          value="All"
+        />
+        <label for="all">Поиск по всюду</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="search"
+          id="YouTube"
+          value="YouTube"
+          checked
+        />
+        <label for="YouTube">Поиск на YouTube</label>
+      </div>
+      <!-- Select -->
+      <div>
+        <label for="topic">Тематика</label>
+        <select
+          name="topic"
+          id="topic"
+        >
+          <option
+            value="1"
+            selected
+          >
+            Все
+          </option>
+          <optgroup label="Популярные">
+            <option value="2">Животные</option>
+            <option value="3">Разработка</option>
+          </optgroup>
+          <optgroup label="Менее Популярные">
+            <option value="2">Цветы</option>
+            <option value="3">Одежда</option>
+          </optgroup>
+          <option value="2">Игры</option>
+          <option value="3">Машины</option>
+        </select>
       </div>
       <button>Искать на YouTube</button>
     </form>
