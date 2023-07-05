@@ -11,37 +11,52 @@
   </head>
   <body>
     <!-- Формы -->
-    <!-- Label   -->
+    <!-- Name - определяет передачу в дальнейшем данных куда-либо еще  -->
     <form
       action="/test"
       method="get"
     >
+      <input
+        type="hidden"
+        name="hid"
+      />
+      <!-- Когда нажмем на кнопку Отправить получим такой путь:
+        http://127.0.0.1:5500/test?hidden=&email=&password=&date=&color=
+      -->
+      <!-- Когда нажмет на кнопку Отправить с заполненными инпутами:
+        http://127.0.0.1:5500/test?hid=&email=paxa0079%40yandex.ru&password=asd&date=2023-07-03&color=asd
+      -->
+      <!-- Записать значение в input можно с помощью атрибута value="" -->
       <label for="email">Введите email</label>
       <input
         type="email"
         placeholder="Email пользователя "
         id="email"
+        name="email"
+        value="a@a.ru"
       />
       <label for="password">Введите пароль</label>
       <input
         type="password"
         placeholder="Пароль пользователя "
         id="password"
+        name="password"
       />
       <label for="date">Введите дату рождения</label>
       <input
         type="date"
         placeholder="Дата рождения пользователя"
         id="date"
+        name="date"
       />
       <label for="text">Введите текс</label>
       <input
         placeholder="Текст"
         id="text"
         type="text"
+        name="color"
       />
       <input type="color" />
-      <!-- Другой вариант связки label и input -->
       <label>
         Введите текст
         <input
@@ -50,30 +65,6 @@
         />
       </label>
       <button>Отправить</button>
-      <!-- Отправит всю форму на /test -->
-      <!-- Атрибуты кнопок -->
-      <!--  type="button" Перестанет отправлять форму, поведение обычной кнопки вне формы -->
-      <button type="button">1</button>
-      <!-- type="submit" - дефолтное поведение кнопки -->
-      <button type="submit">2</button>
-      <!-- type="reset" - сброс формы -->
-      <button type="reset">3</button>
     </form>
-    <button>Отправить вне формы</button>
-    <!-- Если нажать ничего не произойдет -->
-
-    <!-- Альтернативный путь создания кнопки (альтернативно <button type="button"></button> ) -->
-    <input
-      type="button"
-      value="Кнопка 2"
-    />
-    <input
-      type="submit"
-      value="Кнопка 2"
-    />
-    <!-- Минусы использования input как кнопки:
-      1. Передавать текст в качестве value
-      2. Нельзя добавить иконку или изображение кнопке
-    -->
   </body>
 </html>
