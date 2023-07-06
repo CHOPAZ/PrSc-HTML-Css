@@ -22,104 +22,43 @@
       method="get"
     >
       <div>
-        <label for="query"> Введите запрос </label>
+        <label for="emailUser">E-mail<sup>*</sup></label>
+        <input
+          type="email"
+          name="email"
+          id="emailUser"
+          required
+        />
+      </div>
+      <div>
+        <label for="telegramUser">Telegram</label>
         <input
           type="text"
-          name="search_query"
-          id="query"
-          placeholder="Запрос..."
-          required
-          minlength="3"
-          maxlength="20"
+          name="telegram"
+          id="telegramUser"
         />
       </div>
-      <!-- CheckBox - независимо можно выбрать несколько штук -->
       <div>
-        <label for="agree">Согласен</label>
-        <input
-          type="checkbox"
-          name="agree"
-          id="agree"
-        />
-      </div>
-      <!-- Radio - группа радиокнопок, позволяет выбрать что-то одно -->
-      <div>
-        <input
-          type="radio"
-          name="search"
-          id="all"
-          value="All"
-        />
-        <label for="all">Поиск по всюду</label>
-      </div>
-      <div>
-        <input
-          type="radio"
-          name="search"
-          id="YouTube"
-          value="YouTube"
-          checked
-        />
-        <label for="YouTube">Поиск на YouTube</label>
-      </div>
-      <!-- Select -->
-      <div>
-        <label for="topic">Тематика</label>
+        <label for="theme">Тема*</label>
         <select
-          name="topic"
-          id="topic"
+          name="theme"
+          id="theme"
+          required
         >
-          <option
-            value="1"
-            selected
-          >
-            Все
-          </option>
-          <optgroup label="Популярные">
-            <option value="2">Животные</option>
-            <option value="3">Разработка</option>
-          </optgroup>
-          <optgroup label="Менее Популярные">
-            <option value="2">Цветы</option>
-            <option value="3">Одежда</option>
-          </optgroup>
-          <option value="2">Игры</option>
-          <option value="3">Машины</option>
+          <option value="courses">Приобритение курсов</option>
+          <option value="article">Просмотр статьи</option>
         </select>
       </div>
       <div>
-        <label for="volume">Громкость</label>
-        <input
-          type="range"
-          name="volume"
-          id="volume"
-          min="0"
-          max="10"
-          step="2"
-        />
-      </div>
-      <div>
-        <label for="num">Оценка</label>
-        <input
-          type="number"
-          name="num"
-          id="num"
-          min="0"
-          max="10"
-          step="2"
-        />
-      </div>
-      <div>
-        <label for="text">Комментарий</label>
+        <label for="commentUser">Введите комментарий</label>
         <textarea
-          name="text"
-          id="text"
-          rows="5"
-          cols="15"
-          placeholder="Введите текс"
+          name="comment"
+          id="commentUser"
+          cols="30"
+          rows="10"
         ></textarea>
       </div>
-      <button>Искать на YouTube</button>
+      <button>Отправить</button>
     </form>
   </body>
 </html>
