@@ -1,3 +1,15 @@
 label {
-  color: blue;
+  color: red;
+}
+
+h1 {
+  /* цвет фона */
+  color: green
+}
+
+div {
+  /* меняет один конкретно цвет */
+  background-color: #ffe4c4;
+  /* объединяющее свойство background  */
+  background: #ffe4c4;
 }
