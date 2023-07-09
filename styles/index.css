@@ -17,6 +17,7 @@ main {
 h1  {
   color: #FAFAFA;
   font-size: 36px;
+  font-family: 'Courier New', monospace;
 }
 
 label {
