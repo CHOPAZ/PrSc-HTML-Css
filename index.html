@@ -8,13 +8,22 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Miro</title>
+    <style>
+      label {
+        color: goldenrod;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="styles/index.css"
+    />
   </head>
   <body>
-    <!-- Формы -->
-    <!-- Валидация форм
-      required - аттребут, показывающий обязательное поле
-      minlength - минимальное количество букв
-      maxlength - максимальное количество букв
+    <!-- Основы CSS -->
+    <!-- Способы стилизации:
+        1.  Inline - в атрибуде style, иногда используется для динамики
+        2. Внутри тэга style - никогда не использовать
+        3. В отдельном файле - использовать всегда
     -->
 
     <form
@@ -22,7 +31,11 @@
       method="get"
     >
       <div>
-        <label for="emailUser">E-mail<sup>*</sup></label>
+        <label
+          for="emailUser"
+          style="color: red; background-color: aqua"
+          >E-mail<sup>*</sup></label
+        >
         <input
           type="email"
           name="email"
