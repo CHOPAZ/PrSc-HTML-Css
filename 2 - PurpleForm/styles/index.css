@@ -3,6 +3,14 @@
   2. Селектор элемента - input, textarea, select, h1 и тд.
 */
 
+/* Выбор пo id (#) */
+
+#btnSend {
+  border-radius: 10px;
+  padding: 12px 24px;
+  background-color: #6C38CC;
+}
+
 
 main {
   background-color: #1E1F29;
