@@ -23,6 +23,10 @@
   font-weight: 400;
 }
 
+/* Выбор по атрибуту */
+input[type="email"] {
+  background-color: red;
+}
 
 main {
   background-color: #1E1F29;
