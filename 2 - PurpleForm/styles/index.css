@@ -11,6 +11,18 @@
   background-color: #6C38CC;
 }
 
+/* Выбор по классу (.selector) */
+
+.inputForm {
+  width: 697px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #2E2D3D;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 
 main {
   background-color: #1E1F29;
