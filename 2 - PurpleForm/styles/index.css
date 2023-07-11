@@ -1,0 +1,29 @@
+/* Выбор элементов
+  1. Универсальный селектор * - выбор всех элементов
+  2. Селектор элемента - input, textarea, select, h1 и тд.
+*/
+
+
+main {
+  background-color: #1E1F29;
+}
+h1  {
+  color: #FAFAFA;
+  font-size: 36px;
+  font-family: 'Courier New', monospace;
+}
+
+label {
+  color: #AFB2BF;
+}
+
+input, select, textarea {
+  color: #FAFAFA;
+  background-color: #2E2D3D;
+}
+
+button {
+  color: #ffffff;
+  background-color: #6C38CC;
+}
+
