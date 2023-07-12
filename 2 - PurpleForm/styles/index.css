@@ -23,11 +23,6 @@
   font-weight: 400;
 }
 
-/* Выбор по атрибуту */
-input[type="email"] {
-  background-color: red;
-}
-
 main {
   background-color: #1E1F29;
 }
@@ -51,3 +46,11 @@ button {
   background-color: #6C38CC;
 }
 
+
+input:invalid {
+  background: red;
+}
+
+input:valid {
+  background: green;
+}
