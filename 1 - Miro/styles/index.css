@@ -1,3 +1,4 @@
+
 .link {
   color: #4262ff;
   text-decoration: underline;
@@ -31,4 +32,16 @@ p {
 
 .sectionText {
   color: rgba(5, 0, 56, 0.60);
+}
+
+header a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #050038;
+  text-decoration: none ;
+}
+
+header > a {
+  color: red;s
 }
