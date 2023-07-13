@@ -71,10 +71,24 @@ header a {
   background-color: red;
 }
 
-ul li:first-child {
-  color: green
-}
+/* Псевдоклассы с параметрами */
 
-ul li:last-child {
+/* Выбрать n-тый элементы (каждый второй, или каждый пятый и тд)
+ odd - нечетный
+ even - четный
+ 3n - каждый третий
+ 2n-1 -нечетный элемент
+ */
+ul li:nth-child(odd) {
   color: red
 }
+
+/* идет с конца */
+ul li:nth-last-child() {
+  color: green;
+}
+
+ /* Выбрать все элементы которые не содержат (что-то) */
+ p:not(.sectionText) {
+  color: red;
+ }
