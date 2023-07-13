@@ -71,50 +71,20 @@ header a {
   background-color: red;
 }
 
-/* Псевдоклассы с параметрами */
 
-/* Выбрать n-тый элементы (каждый второй, или каждый пятый и тд)
- odd - нечетный
- even - четный
- 3n - каждый третий
- 2n-1 -нечетный элемент
- */
-ul li:nth-child(odd) {
-  color: red
-}
-
-/* идет с конца */
-ul li:nth-last-child() {
-  color: green;
-}
-
- /* Выбрать все элементы которые не содержат (что-то) */
-p:not(.sectionText) {
-  color: red;
-}
-
-/* Псевдоэлементы - позволяет стилизовать определенную часть элемента
-  ::after
-  ::before
-  ::cue
-  ::first-letter
-  ::selection
-  ::slotted и др.
+/* Стили списков
+  list-style - описывает как будет выглядеть булит списка
 */
 
-/* ::before - выбирает то, что идет до */
-a::before {
-  color: red;
-  content: " ! ";
-} 
-
-/* ::after - выбирает то, что идет после */
-a::after {
-  color:red;
-  content: " ! ";
+nav ul {
+  list-style: none;
 }
 
-/* когда происходит выделение текста */
-*::selection {
-  background-color: #4262FF;
+/*list-style: square outside - маркеры будут снаруже */
+/* square inide - маркеры будут внутри */
+/* посмотреть на проверке кода нагляднее */
+/* для передачи картинки добавить url() */
+.sectionList {
+  list-style: none;
+  list-style-image: url(../img/Frame.svg);
 }
