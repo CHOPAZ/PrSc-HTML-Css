@@ -89,6 +89,32 @@ ul li:nth-last-child() {
 }
 
  /* Выбрать все элементы которые не содержат (что-то) */
- p:not(.sectionText) {
+p:not(.sectionText) {
   color: red;
- }
+}
+
+/* Псевдоэлементы - позволяет стилизовать определенную часть элемента
+  ::after
+  ::before
+  ::cue
+  ::first-letter
+  ::selection
+  ::slotted и др.
+*/
+
+/* ::before - выбирает то, что идет до */
+a::before {
+  color: red;
+  content: " ! ";
+} 
+
+/* ::after - выбирает то, что идет после */
+a::after {
+  color:red;
+  content: " ! ";
+}
+
+/* когда происходит выделение текста */
+*::selection {
+  background-color: #4262FF;
+}
