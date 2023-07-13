@@ -86,5 +86,9 @@ nav ul {
 /* для передачи картинки добавить url() */
 .sectionList {
   list-style: none;
-  list-style-image: url(../img/Frame.svg);
+  /* list-style: url(../img/Frame.svg); */
+}
+
+.sectionList li::marker {
+  content: url(../img/Frame.svg);
 }
