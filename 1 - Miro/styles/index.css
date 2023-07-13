@@ -71,19 +71,10 @@ header a {
   background-color: red;
 }
 
-
-/* Стили списков
-  list-style - описывает как будет выглядеть булит списка
-*/
-
 nav ul {
   list-style: none;
 }
 
-/*list-style: square outside - маркеры будут снаруже */
-/* square inide - маркеры будут внутри */
-/* посмотреть на проверке кода нагляднее */
-/* для передачи картинки добавить url() */
 .sectionList {
   list-style: none;
   /* list-style: url(../img/Frame.svg); */
@@ -92,3 +83,39 @@ nav ul {
 .sectionList li::marker {
   content: url(../img/Frame.svg);
 }
+
+/* Каскад - применение стилей на основании их положения, специфичности и состояния
+
+div {
+  background: red;
+}
+
+div {
+  background: blue; - применится это правило
+}
+
+Порядок подключения файлов стилей, тоже влияет на приоритет
+ */
+.test {
+   background: red;
+}
+.test {
+   background: blue;
+}
+
+
+/* Порядок классов в разметке html не влияет на каскад стилей */
+
+.testGreen {
+  background: green;
+}
+
+.testOrange {
+  background: orange;
+}
+
+
+
+ 
+
+
