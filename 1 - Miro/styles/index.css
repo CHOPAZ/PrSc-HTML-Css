@@ -137,8 +137,11 @@ div {
 
 */
 
+/* !important - делает высокий приоритет чем всех остальных стилей */
 
-
+button {
+  background-color: red !important;
+}
  
 
 
