@@ -1,16 +1,37 @@
-
-.link {
-  color: #4262ff;
-  text-decoration: underline;
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-#heroBtn {
-  background-color: #4262ff;
-  border-radius: 32px;
-  border: 1px solid #4262FF;
-  color: #ffffff;
-  width: 440px;
-  height: 51px;
+header {
+  margin-bottom: 60px;
+}
+
+header a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #050038;
+  text-decoration: none ;
+}
+
+nav {
+  padding: 34px 50px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0 0 17px 0;
+}
+
+h2 {
+  margin: 0 0 19px 0;
 }
 
 h1, h2 {
@@ -26,53 +47,60 @@ p {
   line-height: 24px;
 }
 
+
+
+footer {
+  background: #050038;
+  color: #ffffff;
+  padding: 47px 40px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#heroBtn {
+  background-color: #4262ff;
+  border-radius: 32px;
+  border: 1px solid #4262FF;
+  color: #ffffff;
+  height: 48px;
+  padding: 10px 20px;
+}
+
+
+.link {
+  color: #4262ff;
+  text-decoration: underline;
+}
+
 .heroText {
   color: #050038;
+  margin: 0 0 55px 0;
+}
+
+.heroForm input {
+  border-radius: 32px;
+  border: 1px solid #9B99AF;
+  height: 38px;
+  padding: 5px 10px;
+}
+
+.heroForm + p {
+  margin: 8px 0 52px 0;
 }
 
 .sectionText {
   color: rgba(5, 0, 56, 0.60);
+  margin: 0 0 40px 0;
 }
-
-header a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #050038;
-  text-decoration: none ;
-}
-
-/* Псеводо классы
-  Специальные классы, позволяющие выбрать элемент в определенном состоянии
-  Псевдоклассы находятся в спецификации
-  - выбрать элемент в определенном состоянии
-  :active
-  :last-child
-  :focus
-  :hover
-  и т.д
-*/
 
 .link:hover {
   color: rgb(134, 84, 199);
-}
-
-#heroBtn:hover {
-  background-color: #0e0e13;
-}
-
-/* нажатие на кнопку */
-#heroBtn:active {
-  background-color: red;
-}
-
-
-.heroForm input:focus {
-  background-color: red;
-}
-
-nav ul {
-  list-style: none;
 }
 
 .sectionList {
@@ -84,71 +112,5 @@ nav ul {
   content: url(../img/Frame.svg);
 }
 
+/* Схлопывание вертикальных margin - когда делается у 1-го элемента отступ снизу 18px, а у 2-го сверху 13px, то margin схлопывается и результирующим отступом будет отступ, который больше, т.е. 18px */
 
-/* Блочная модель - правила, по которым браузер определяет размер элемента на странице, его ширину и высоту, а так же дополнительные параметры
-
-  Составляющие, определяющие как элемент занимает место на странице
-  1. Content box - ширина и высота элемента
-  2. Border - границы элемента
-  3. Margin - внешние отступы
-  4. Padding - внтуренние отступы
-*/
-
-
-/* Ширина и высота
-  По умолчпнию, у любых блочных элементов ширина будет равна ширине окне, а высоа распологается по контенту
-
-  Когда контент не влезает в блок, он вылезает за него
-*/
-
-
-.test {
-  background: pink;
-  width: 200px;
-  height: 350px;
-}
-
-
-/* Границы */
-
-.border1 {
-  border-style: solid; /* стиль  */
-  border-width: 2px; /* ширина */
-  border-color: #4262ff; /* цвет */
-  border-radius: 5px;
-
-  border: 2px solid #4262ff /* общаа запись */
-}
-
-/* При добавлении границ, контент смещается
-  Изменить это позволяет box-sizing
-
-  box-sizing - говорит браузеру как ему считать ширину элемента
-
-  box-sizing: content-box - ширина элемента будет считать как внутреннюю ширину которую мы задали + бордеры
-
-  box-sizing: border-box; - внутреннее пространство сузится (например ширина указана 200px, задали бордер по 5 px, и эти бордеры войдут в 200px, сузив внутренний контент)
-*/
-.border1 {
-  box-sizing: border-box;
-}
-
-/* padding - внутренний отступ
-  padding: 10px - отступ ко всем сторонам 
-  padding: 10px 5px - отступ 10px сверху и низу, 5px справа и слева
-  padding: 10px 5px 3px - отступ 10px сверху, 5px справа и леваб 3px - снизу
-  padding: 10px 5px 3px 4px - 10 сверху, 5 справа, 3 снизу, 4 слева
-*/
-.test {
-  padding: 10px;
-}
-
-/* margin - внешний отступ
-
-  Для центрирования блока используется
-  margin: 0 auto; - 10px к примеру
-*/
-
-.test {
-  margin: 0 auto;
-}
