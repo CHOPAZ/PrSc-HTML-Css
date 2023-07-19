@@ -104,8 +104,8 @@ nav ul {
 
 .test {
   background: pink;
-  width: 144px;
-  height: 225px;
+  width: 200px;
+  height: 350px;
 }
 
 
@@ -131,4 +131,14 @@ nav ul {
 */
 .border1 {
   box-sizing: border-box;
+}
+
+/* padding - внутренний отступ
+  padding: 10px - отступ ко всем сторонам 
+  padding: 10px 5px - отступ 10px сверху и низу, 5px справа и слева
+  padding: 10px 5px 3px - отступ 10px сверху, 5px справа и леваб 3px - снизу
+  padding: 10px 5px 3px 4px - 10 сверху, 5 справа, 3 снизу, 4 слева
+*/
+.test {
+  padding: 10px;
 }
