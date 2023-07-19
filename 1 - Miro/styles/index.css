@@ -142,3 +142,13 @@ nav ul {
 .test {
   padding: 10px;
 }
+
+/* margin - внешний отступ
+
+  Для центрирования блока используется
+  margin: 0 auto; - 10px к примеру
+*/
+
+.test {
+  margin: 0 auto;
+}
