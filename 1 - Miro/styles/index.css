@@ -126,3 +126,53 @@ footer a {
   float: right; /* вырывает с потока и отправляет направо */ 
   
 }
+
+
+/* display - распологается целиковым блоком, занимаю всю ширину
+
+  Для строчных элементов, нельзя задавать некоторые параметы
+
+  display: inline-block; - позволяет для строчных элементов задавать параметры как для блочных элементов
+*/
+
+.divRed {
+  background: red;
+  display: inline;
+}
+
+.divGreen {
+  background: green;
+  display: inline;
+  padding: 20px;
+  margin: 20px; /* не работает корректно по горизонтали */
+  width: 200px; /* не работает для inline*/
+  height: 200px; /* не работает для inline */
+}
+
+.divOrange {
+  background: orange;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.spanRed {
+  background: red;
+  display: block;
+}
+
+.spanGreen {
+  background: green;
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.spanOrange {
+  background: orange;
+  display: block;
+}
