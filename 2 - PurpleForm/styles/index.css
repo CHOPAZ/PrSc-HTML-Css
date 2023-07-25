@@ -1,56 +1,66 @@
-/* Выбор элементов
-  1. Универсальный селектор * - выбор всех элементов
-  2. Селектор элемента - input, textarea, select, h1 и тд.
-*/
-
-/* Выбор пo id (#) */
-
-#btnSend {
-  border-radius: 10px;
-  padding: 12px 24px;
-  background-color: #6C38CC;
-}
-
-/* Выбор по классу (.selector) */
-
-.inputForm {
-  width: 697px;
-  height: 58px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  background-color: #2E2D3D;
-  font-size: 16px;
-  font-weight: 400;
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 main {
   background-color: #1E1F29;
+  border-radius: 10px;
+  padding: 48px;
 }
 h1  {
   color: #FAFAFA;
   font-size: 36px;
-  font-family: 'Courier New', monospace;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 0 32px 0;
+
 }
 
 label {
   color: #AFB2BF;
+  position: absolute;
+  top: 12px;
+  left: 48px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
 }
 
 input, select, textarea {
   color: #FAFAFA;
   background-color: #2E2D3D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: sans-serif;
+  padding: 27px 48px 12px;
+  border-radius: 10px;
+  border: none;
 }
 
 button {
   color: #ffffff;
   background-color: #6C38CC;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  cursor: pointer;
 }
 
-
-input:invalid {
-  background: red;
+.field img {
+  position: absolute;
+  top: 17px;
+  left: 16px;
 }
 
-input:valid {
-  background: green;
+.field {
+  margin-bottom: 16px;
+  position: relative;
 }
+

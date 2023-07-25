@@ -25,48 +25,54 @@
         action="#"
         method="get"
       >
-        <div>
+        <div class="field">
           <label for="emailUser">E-mail<sup>*</sup></label>
+          <img
+            src="./img/message.svg"
+            alt="message"
+          />
           <input
             type="email"
             name="email"
             id="emailUser"
             required
-            class="inputForm"
           />
         </div>
-        <div>
+        <div class="field">
           <label for="telegramUser">Telegram</label>
+          <img
+            src="./img/telegram.svg"
+            alt="telegram"
+          />
           <input
             type="text"
             name="telegram"
             id="telegramUser"
-            class="inputForm"
           />
         </div>
-        <div>
+        <div class="field">
           <label for="theme">Тема*</label>
+          <img
+            src="./img/topic.svg"
+            alt="topic"
+          />
           <select
             name="theme"
             id="theme"
             required
-            class="inputForm"
           >
             <option value="courses">Приобритение курсов</option>
             <option value="article">Просмотр статьи</option>
           </select>
         </div>
-        <div>
-          <label for="commentUser">Введите комментарий</label>
+        <div class="field">
+          <label for="commentUser">Комментарий</label>
           <textarea
             name="comment"
             id="commentUser"
-            cols="30"
-            rows="10"
-            class="inputForm"
           ></textarea>
         </div>
-        <button id="btnSend">Отправить</button>
+        <button>Отправить</button>
       </form>
     </main>
   </body>
