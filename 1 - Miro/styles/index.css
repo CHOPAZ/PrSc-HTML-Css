@@ -260,3 +260,12 @@ footer a {
   height: 100px;
 }
 
+
+/* text-align - выравнивание текста
+  P.s. не работает с display, width, т.к они зажимают контент
+  text-align: justify; - равномерное распределение текста
+*/
+
+h1 {
+  text-align: center;
+}
