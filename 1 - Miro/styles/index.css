@@ -133,6 +133,8 @@ footer a {
   Для строчных элементов, нельзя задавать некоторые параметы
 
   display: inline-block; - позволяет для строчных элементов задавать параметры как для блочных элементов
+
+  display: none - скрывает элемент, но не удаляется из документа
 */
 
 .divRed {
@@ -176,3 +178,85 @@ footer a {
   background: orange;
   display: block;
 }
+
+/* position - находится в потоке, как будет позиционировать элемент в потоке, по умолчанию static */
+
+.static .cl2 {
+  position: static;
+}
+
+/* relative, появляется возможность использовать top, left, right, bottom позволяет ОТНОСИТЕЛЬНО позиционировать элемент, но изначальное место его остается зарезервированным за ним  */
+
+.relative .cl2 {
+  position: relative;
+  top: -50px; /* опустится вниз на -50px относительно родителя .relative */
+  left: -50px;
+}
+
+/* absolute - полезно для высплывающих окон например, позволяет АБСОЛЮТНО позиционировать поверх всего
+  место теряется, т.е. cl2 перекроет cl3
+
+  Работа absolute:
+  1. Выпадает из потока
+  2. Позиционироваться относительно своего первого потомка, который имеет relative, либо если такого нет то относитльно корневого элемента
+*/
+
+.absolute {
+  position: relative;
+}
+
+.absolute .cl2 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/* fixed - элемент фиксируется */
+
+/* .fixed .cl2 {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+} */
+
+/* sticky - скроля до элемента ведет в себя как статичный, после как fixed элемент до того как не кончится свободное пространсво для его перемещения
+  P.s - не работает с fixed
+*/
+
+.sticky {
+  height: 600px;
+}
+
+.sticky .cl2 {
+  position: sticky;
+  top: 60px;
+  left: 60px;
+}
+
+.cl1 {
+  background: red;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.cl2 {
+  background: green;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.cl3 {
+  background: orange;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+
