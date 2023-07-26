@@ -132,19 +132,24 @@ h1 {
 }
 
 
-/* Проблемы
-  Если есть вложенные списки, то размер их при em будет расти в геометрическйй прогрессии, что не должно быть так
-  Это исправить может rem
+/* Анимация
 
-  Rem - это относительная величина, относительно коренвого элемента html
-*/
+  transition: all 0.5s; -  анимация всех свойст котрые возмможны
+  transition: background-color 0.5s; - анимация для цвета бэкграунда
 
-/* vh, vw
+  Добавление нескольких свойств через запятупю:
+  transition: background-color 1s, border-radius 2s;
   
-  100vh - высота текущего viewport браузера
-  100vw - ширина текужего viewport браузера
+  Задержка
+  transition: background-color 1s 2s, - 2s это задержка перед применением анимации
 */
 
-footer {
-  height: 100vh;
+#heroBtn {
+  transition: background-color 1s, border-radius 1s; /* если переместить на :hover, то анимация будет работать в одну сторону */
 }
+
+#heroBtn:hover {
+  background-color: #000000;
+  border-radius: 50%;
+}
+
