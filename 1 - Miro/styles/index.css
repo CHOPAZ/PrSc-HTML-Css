@@ -160,31 +160,32 @@ h1 {
   width: 200px;
   height: 200px;
   margin: 10px;
-  transition:  margin-left 2s;
+  color: white;
+  font-size: 24px;
 }
 
+
+/* Transform - изменение текущего вида элемента, без потери его из потока  */
+
 .test div:nth-child(1) {
-  margin-left: 200px;
-  transition-timing-function: ease-out; /* начинает быстро */
+  transform: rotate(45deg); /* повернуть относительно центра на 45 градусов */
 }
 
 .test div:nth-child(2) {
-  margin-left: 200px;
-  transition-timing-function: ease-in; /* начинает медленно */
+  transform: rotate(45deg);
+  transform-origin: left bottom; /* относительно нижнего левого угла */
+
 }
 
 .test div:nth-child(3) {
-  margin-left: 200px;
-  transition-timing-function: linear; /* линейная скорость */
+  transform: scale(2, 1);
+  text-align: center;
 }
 
 .test div:nth-child(4) {
-  margin-left: 200px;
-  transition-timing-function: steps(6, end);
+  transform: translateX(300px);
 }
 
 .test div:nth-child(5) {
-  margin-left: 200px;
-  transition-timing-function: cubic-bezier(1,1.31,0,-0.97);
-  
+  transform: skew(10deg);  
 }
