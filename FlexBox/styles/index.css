@@ -4,14 +4,16 @@ body {
   font-size: 55px;
 }
 
-/* .container стал flex-container */
+/* flex-direction; - существует только для родительского блока, т.е. для .container 
+*/
+
 .container {
   border: 10px solid #6c38cc;
-  display: flex; /* начинает занимать все отведенное по горизонтали простарнство */
-  /* display: inline-flex; ведет себя как inline элемент */
+  display: flex;
+  /* flex-direction: row; по умолчанию, основная ось слева направо */
+  flex-direction: column; /* элементы колонкой, основная ось сверху вниз */
 }
 
-/* Все элементы внутри .container стали flex-item */
 
 .item {
   text-align: center;
