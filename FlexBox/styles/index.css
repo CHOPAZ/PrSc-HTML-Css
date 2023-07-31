@@ -1,0 +1,21 @@
+body {
+  background-color: #1c1b21;
+  color: #fafafa;
+  font-size: 55px;
+}
+
+/* .container стал flex-container */
+.container {
+  border: 10px solid #6c38cc;
+  display: flex; /* начинает занимать все отведенное по горизонтали простарнство */
+  /* display: inline-flex; ведет себя как inline элемент */
+}
+
+/* Все элементы внутри .container стали flex-item */
+
+.item {
+  text-align: center;
+  background: #232228;
+  border: 1px solid #6c38cc;
+  padding: 10px;
+}
