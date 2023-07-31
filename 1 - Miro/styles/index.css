@@ -168,48 +168,17 @@ h1 {
 
 */
 
+/* Calc - позволяет выполнять простые математические операции */
+
+/* Ставим   width: 100%; и блок начинает выезжать из за margin 10px, исправить можно с помощью calc
+  width: calc(100% - 20px); - 20px отступы слева и справа по 10px
+*/
+
 .test div {
   background-color: red;
-  width: 200px;
+  width: calc(100% - 20px);
   height: 200px;
   margin: 10px;
   color: white;
   font-size: 24px;
-  animation: my-move 2s ease forwards;
-  animation-direction: reverse; /* направление анимации */
-}
-
-/* остановка анимации */
-.test:hover div {
-  animation-play-state: paused;
-}
-
-@keyframes my-move {
-  25% {
-    transform: translateX(100%);
-  }
-
-  50% {
-    transform: translateX(100%) translateY(-50%);
-  }
-
-  75% {
-    transform: translateX(0%) translateY(-50%);
-  }
-  100% {
-    transform: translateX(0%) translateY(0%);
-  }
-} 
-
-/* 
-  Как работать с шрифтами, относительно ширины или высоты view port. Единица измерения vmin
-*/
-
-h1, h2 {
-  font-size: 4vw; /* По умолчанию 100vw - ширина view port, 4- Ыэто 4%
-  Когда меняется ширина меняется и текст в размере
-  Аналогично работает и vh 
-
-  font-size: 4vmin - минимальное из двух величин (высота или ширина
-  */
 }
