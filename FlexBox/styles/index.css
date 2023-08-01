@@ -10,19 +10,20 @@ body {
 
 /* 
   Позиционирование элементов
-  align-items расположение элементов по дополнительной оси
+  Align-content положенеи по дополнительной оси
 */
 
 .container {
   border: 10px solid #6c38cc;
+  height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 50vh;
-  align-items: stretch; /* по умолчанию, растягивает элементы */
   align-items: flex-start;
-  align-items: flex-end;  
-  align-items: center;
-  align-items: baseline; /*  элементы выравниваются по базовой линии текста. «Базовая линия» — baseline — воображаемая линия, проходящая по нижнему краю знаков шрифта (без учёта выносных элементов). Пример с item4 и item8 */
+  align-content: center;
+  align-content: stretch; /* по умолчанию */
+  align-content: end; /* прижмет контент вниз */
+
 }
 
 
@@ -31,12 +32,6 @@ body {
   background: #232228;
   border: 1px solid #6c38cc;
   padding: 10px;
+  width: calc(100% / 3);
 }
 
-.item4 {
-  font-size: 40px;
-}
-
-.item8 {
-  font-size: 120px;
-}
