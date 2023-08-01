@@ -1,17 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1c1b21;
   color: #fafafa;
   font-size: 55px;
 }
 
-/* flex-direction; - существует только для родительского блока, т.е. для .container 
+/* flex-wrap; - флекс-элементы помещаются (или пытаются уместиться) в один ряд и не переносятся в новый ряд, даже если не влезают в размеры родителя.
 */
 
 .container {
   border: 10px solid #6c38cc;
   display: flex;
-  /* flex-direction: row; по умолчанию, основная ось слева направо */
-  flex-direction: column; /* элементы колонкой, основная ось сверху вниз */
+  flex-wrap: nowrap; /* Значение по умолчанию, элементы не будут переносится, а будут сжиматься */
+  flex-wrap: wrap;/* будет переносить элементы если они не влезают, и оставляет свободное пространство */
 }
 
 
@@ -20,4 +24,5 @@ body {
   background: #232228;
   border: 1px solid #6c38cc;
   padding: 10px;
+  width: calc(100% / 3); /* 3 элемента в строке */
 }
