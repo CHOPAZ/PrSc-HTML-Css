@@ -9,13 +9,22 @@ body {
 }
 
 /* 
-  flex-flow короткая запись для flex-direction и flex-wrap
+  Позиционирование элементов
+  justify-content
 */
 
 .container {
   border: 10px solid #6c38cc;
   display: flex;
-  flex-flow: row wrap-reverse;
+  flex-direction: row;
+  justify-content: center; /* элементры отцентруются */
+  justify-content: left; /* элементы слева относительно vieport */
+  justify-content: right; /* элементы справа относительно vieport */
+  justify-content: flex-start; /* элементы вначале flex контейнера */
+  justify-content: flex-end; /* элементы в конец flex контейнера */
+  justify-content: space-between; /* крайние элементы прижимаются к краям родителя, оставшиеся выстраиваются внутри контейнера равномерно, так, чтобы между ними были одинаковые отступы. */
+  justify-content: space-around; /* свободное пространство делится поровну между элементами и по половине от этой доли размещается по бокам от каждого элемента. Таким образом, между соседними элементами будет равное расстояние, а снаружи крайних элементов — по половине этого расстояния */
+  justify-content: space-evenly;/* свободное место будет распределено так, чтобы расстояние между любыми двумя элементами было одинаковым и расстояние от крайних элементов до края было таким же. */
 }
 
 
@@ -24,5 +33,4 @@ body {
   background: #232228;
   border: 1px solid #6c38cc;
   padding: 10px;
-  width: calc(100% / 3); /* 3 элемента в строке */
 }
