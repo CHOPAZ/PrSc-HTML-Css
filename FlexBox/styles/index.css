@@ -8,15 +8,14 @@ body {
   font-size: 55px;
 }
 
-/* Порядок элементов
-
-  order - влияет на визуальное оторбражение элементов
+/* 
+  flex-flow короткая запись для flex-direction и flex-wrap
 */
 
 .container {
   border: 10px solid #6c38cc;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap-reverse;
 }
 
 
@@ -26,16 +25,4 @@ body {
   border: 1px solid #6c38cc;
   padding: 10px;
   width: calc(100% / 3); /* 3 элемента в строке */
-}
-
-.item7 {
-  order: 1;
-}
-
-.item4 {
-  order: 2; /* есть у любого айтема с дефолтным order 0 */
-}
-
-.item9 {
-  order: -1;
 }
