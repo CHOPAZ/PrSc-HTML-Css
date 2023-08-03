@@ -9,11 +9,7 @@ body {
 }
 
 /* 
-  Gap row-gap column-gap
-
-  gap - краткая запись  row-gap и column-gap
-
-  gap - отступы, пришли от гридов.
+  Auto margin
 
 */
 
@@ -21,7 +17,6 @@ body {
   border: 10px solid #6c38cc;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px
 }
 
 
@@ -30,17 +25,8 @@ body {
   background: #232228;
   border: 1px solid #6c38cc;
   padding: 10px;
-  /* flex: 1 1 calc(100% / 3 - 20px); */
-  /* правильный расчет отступов дя 3-х колонок
-  20px - ширина gap
-  *2 - количество промежутков между колонками (т.е. 2 отступа будет между 3 колонками)
-  /3 - количество элементов (колонок)
-  */
-  flex: 0 1 calc(100% / 3 - 20px * 2 / 3);
 }
 
-
-
-
-
-
+.item1 {
+  margin-right: auto; /* раздвинет Logo и отстальные элементы оставив все свободное место */
+}
