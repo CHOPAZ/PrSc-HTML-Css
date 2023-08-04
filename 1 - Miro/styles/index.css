@@ -1,6 +1,18 @@
+/* Подключение шрифтов
+
+  1. Способ (@font-face) - возможность подключить
+  Минус 
+*/
+
+ @font-face {
+      font-family: "Roboto";
+      src: url("../fonts/Roboto-Regular.ttf");
+    }
+
 body {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -130,4 +142,5 @@ h1 {
   height: 3em;
   font-size: 1em;
 }
+
 
