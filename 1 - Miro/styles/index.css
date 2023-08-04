@@ -1,13 +1,8 @@
 /* Подключение шрифтов
 
-  1. Способ (@font-face) - возможность подключить
-  Минус 
+  1. Способ GoogleFonts
+  Возможность скачивания с sdn Google быстрее, чем с вашего сервера
 */
-
- @font-face {
-      font-family: "Roboto";
-      src: url("../fonts/Roboto-Regular.ttf");
-    }
 
 body {
   margin: 0;
