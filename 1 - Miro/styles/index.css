@@ -1,17 +1,14 @@
-/* Подключение шрифтов
-
-  1. Способ GoogleFonts
-  Возможность скачивания с sdn Google быстрее, чем с вашего сервера
-*/
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
 header {
   margin-bottom: 60px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 header a {
@@ -24,13 +21,24 @@ header a {
 
 nav {
   padding: 34px 50px;
-  border-bottom: 1px solid #f0f0f0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 34px;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 50px;
+  margin-bottom: 200px;
 }
 
 h1 {
@@ -79,6 +87,20 @@ footer a {
   padding: 10px 20px;
 }
 
+#hero {
+  display: flex;
+  gap: 65px;
+}
+
+#hero h1 {
+  width: 285px;
+}
+
+.heroLogos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 .link {
   color: #4262ff;
@@ -88,12 +110,19 @@ footer a {
 .heroText {
   color: #050038;
   margin: 0 0 55px 0;
+  width: 424px;
+}
+
+.heroForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .heroForm input {
   border-radius: 32px;
   border: 1px solid #9B99AF;
-  height: 38px;
+  height: 48px;
   padding: 5px 10px;
 }
 
@@ -112,30 +141,9 @@ footer a {
 
 .sectionList {
   list-style: none;
-  /* list-style: url(../img/Frame.svg); */
 }
 
 .sectionList li::marker {
   content: url(../img/Frame.svg);
 }
-
-/* em */
-
-#hero {
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-.heroText {
-  font-size: 2em;
-}
-
-#heroBtn {
-  height: 3em;
-  font-size: 1em;
-}
-
 
