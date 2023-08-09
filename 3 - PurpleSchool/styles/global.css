@@ -1,10 +1,25 @@
-/* Методология БЭМ
-
-  Б - блок, отделимая составляющая сайта
-  Э - элемент блока
-  М - модификатор
-
+/* Custom Properties
 */
+
+/* В основном кастомные свойста задають на рут элементе
+:root - корень документа
+*/
+
+:root {
+  --color-primary: #6c38cc;
+  --space: 32px;
+}
+
+html {
+/*   --color-primary: green; */
+}
+
+body {
+  background: #16171D;
+  color: #f0f0f0;
+/*   --color-primary: #6c38cc;
+  --space: 32px; */
+}
 
 .section-header {
   /* блок */
@@ -30,8 +45,8 @@
 }
 
 .btn_primary {
-  /* модификатор */
-  background: #6c38cc;
+  background: var(--color-primary, red); /* red - Дефолтное ззначение */
+  /* background: #6c38cc; */
   color: #f0f0f0
 }
 
@@ -41,12 +56,8 @@
   color: #f0f0f0;
 }
 
-body {
-  background: #16171D;
-  color: #f0f0f0;
-}
 
 /* микс */
 .hero__btn {
-  margin-top: 32px;
+  margin-top: var(--space);
 }
