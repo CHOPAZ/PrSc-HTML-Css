@@ -1,0 +1,52 @@
+/* Методология БЭМ
+
+  Б - блок, отделимая составляющая сайта
+  Э - элемент блока
+  М - модификатор
+
+*/
+
+.section-header {
+  /* блок */
+}
+
+.section-header__top {
+  /* элемент блока */
+}
+
+.section-header__h2 {
+  /* элемент блока */
+}
+
+.btn {
+  /* блок */
+  padding: 16px 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  border-radius: 10px;
+  background: none;
+  border: none;
+}
+
+.btn_primary {
+  /* модификатор */
+  background: #6c38cc;
+  color: #f0f0f0
+}
+
+.btn_ghost {
+  /* модификатор */
+  border: 1px solid #4D5064;
+  color: #f0f0f0;
+}
+
+body {
+  background: #16171D;
+  color: #f0f0f0;
+}
+
+/* микс */
+.hero__btn {
+  margin-top: 32px;
+}
