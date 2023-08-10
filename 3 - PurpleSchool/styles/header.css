@@ -2,10 +2,11 @@
 
 .header {
   background-color: var(--color-bg-medium);
+  padding: 40px 24px;
 }
 
 .header__wrapper {
-  max-width: 1220px;
+  max-width: calc(1220px - 48px); /* 48px (24px по бокам, что бы лого и логин не прижимались к краям */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -19,10 +20,30 @@
   font-size: 18px;
   line-height: 120%;
   color: var(--color-text);
+
 }
 
 .header__login:hover {
   color: var(--color-link-hover)
+}
+
+.header__mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 960px) {
+  .header__logo {
+    max-width: 174px;
+  }
+  .header__login {
+    display: none;
+  }
+
+  .header__mobile-menu-btn {
+    display: block;
+  }
 }
 
 
@@ -32,6 +53,7 @@
   list-style: none;
   display: flex;
   gap: 40px; /* 56px (из макета) - 16px отступы у активных кнопок */
+  margin: 0;
 }
 
 .menu__item {
@@ -53,3 +75,8 @@
   border-radius: var(--border-8);
 }
 
+@media (max-width: 960px) {
+  .menu {
+    display: none;
+  }
+}
