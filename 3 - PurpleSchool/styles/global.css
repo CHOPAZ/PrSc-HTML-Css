@@ -1,13 +1,16 @@
 :root {
   --color-primary: #6c38cc;
+  --color-primary-hover: #46287e;
   --color-bg: #16171D;
   --color-bg-medium: #1E1F29;
   --color-bg-light: #2E2D3D;
   --color-text: #FAFAFA;
   --color-link-hover: #AFB2BF;
   --color-stroke: #4D5064;
+  --color-gradient: linear-gradient(158deg, #D77BE5 0%, #BE63E5 34.69%, #6C38CC 100%);
 
   --border-8: 8px;
+  --container: calc(1220px - 48px); /* 48px (24px по бокам, что бы лого и логин не прижимались к краям */
 }
 
 * {

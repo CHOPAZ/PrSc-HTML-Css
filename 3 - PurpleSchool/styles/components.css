@@ -1,0 +1,42 @@
+/* Sections */
+
+.section_light {
+  background-color: var(--color-bg-medium);
+}
+
+/* Button */
+
+.hero__cta {
+  display: flex;
+  gap: 32px;
+}
+.btn {
+  padding: 16px 32px;
+  color: var(--color-text);
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  border-radius: var(--border-8);
+  cursor: pointer;
+}
+
+
+.btn_primary {
+  background-color: var(--color-primary);
+}
+
+.btn_primary:hover {
+background-color: var(--color-primary-hover);
+}
+
+.btn_ghost {
+  border: 1px solid var(--color-stroke);
+}
+
+.btn_ghost:hover {
+  background-color: var(--color-bg-light);
+}
+

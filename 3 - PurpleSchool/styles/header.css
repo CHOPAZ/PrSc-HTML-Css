@@ -6,7 +6,7 @@
 }
 
 .header__wrapper {
-  max-width: calc(1220px - 48px); /* 48px (24px по бокам, что бы лого и логин не прижимались к краям */
+  max-width: var(--container);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
