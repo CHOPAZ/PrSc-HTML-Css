@@ -2,7 +2,6 @@
 
 .header {
   background-color: var(--color-bg-medium);
-  padding: 40px 24px;
 }
 
 .header__wrapper {
@@ -11,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 40px 24px;
 }
 
 .header__login {
@@ -34,9 +34,6 @@
 }
 
 @media (max-width: 960px) {
-  .header__logo {
-    max-width: 174px;
-  }
   .header__login {
     display: none;
   }
@@ -44,6 +41,17 @@
   .header__mobile-menu-btn {
     display: block;
   }
+
+  .header__wrapper {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__logo {
+    max-width: 174px;
+  }
+
 }
 
 

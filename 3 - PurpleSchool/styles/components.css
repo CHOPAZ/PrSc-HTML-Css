@@ -6,10 +6,6 @@
 
 /* Button */
 
-.hero__cta {
-  display: flex;
-  gap: 32px;
-}
 .btn {
   padding: 16px 32px;
   color: var(--color-text);
@@ -38,5 +34,11 @@ background-color: var(--color-primary-hover);
 
 .btn_ghost:hover {
   background-color: var(--color-bg-light);
+}
+
+@media (max-width: 640px) {
+  .btn {
+    padding: 12px 24px;
+  }
 }
 
