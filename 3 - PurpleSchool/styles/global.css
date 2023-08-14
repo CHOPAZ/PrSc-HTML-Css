@@ -12,11 +12,20 @@
   --color-gradient: linear-gradient(158deg, #D77BE5 0%, #BE63E5 34.69%, #6C38CC 100%);
 
   --border-8: 8px;
+  --border-10: 10px;
   --container: calc(1220px - 48px); /* 48px (24px по бокам, что бы лого и логин не прижимались к краям */
 }
 
 * {
   box-sizing: border-box;
+}
+
+
+html {
+  /* для сглаживания шрифтов */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
