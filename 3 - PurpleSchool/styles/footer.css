@@ -17,20 +17,22 @@
 
 .footer__menu {
   display: flex;
-  gap: 80px;
+  gap: 24px 80px;
+  margin-bottom: 48px;
 }
 
 .footer__menu-header {
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
-  color: var(--color-secondary)
+  color: var(--color-secondary);
+  margin-bottom: 16px;
 }
 
 .menu-small {
   list-style: none;
   padding: 0;
-  margin: 16px 0 48px;
+  margin: 0;
 }
 
 .menu-small__item {
@@ -54,4 +56,18 @@
   font-weight: 400;
   line-height: 150%;
   color: var(--color-link-hover);
+}
+
+@media (max-width: 860px) {
+  .footer__menu {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__social {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
