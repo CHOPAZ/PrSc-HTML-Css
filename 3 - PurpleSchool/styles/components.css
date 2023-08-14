@@ -24,6 +24,7 @@
   border-radius: var(--border-8);
   cursor: pointer;
   display: inline-block;
+  text-align: center;
 }
 
 
@@ -90,6 +91,14 @@ background-color: var(--color-primary-hover);
   line-height: 120%;
   color: var(--color-text);
   margin: 0 0 32px;
+}
+
+@media (max-width: 860px) {
+  .headling__button {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 120%;
+  }
 }
 
 /* paragraph */
@@ -170,4 +179,18 @@ background-color: var(--color-primary-hover);
 
 .post__btn a {
   display: block;
+}
+
+@media (max-width: 860px) {
+  .post {
+    flex-direction: column;
+  }
+
+  .post__header {
+    font-size: 21px;
+  }
+
+  .btn__more a {
+    width: 100%;
+  }
 }
