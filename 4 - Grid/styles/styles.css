@@ -46,15 +46,18 @@ body {
 
 
 /* Grid контейнер */
+
+/* Ширина колонок */
 .wrapper {
   display: grid;
-  grid-template-columns: 200px 100px;
+  grid-template-columns: 50% 50%;
   gap: 15px;
 }
 
-.wrapper {
-  grid-auto-flow: row; /* по умолчанию */
-  grid-auto-flow: column;
-  grid-template-rows: 200px 100px;
+/* P.s. Если применить 50% (например), то колонки будут заезжать на margin, т.к. 50% + 50% + 15px(gap) > 100%. Для избавления этого использовать фрактции */
 
+.wrapper {
+  grid-template-columns: 1fr 1fr; /* две колонки */
+  grid-template-columns: repeat(3, 1fr); /* 1fr 1fr 1fr */
+  grid-template-columns: repeat(3, 1fr) auto; /* 1fr 1fr 1fr auto - говорит, что должны иметь колонку но ее размер выстроиться автоматически по контенту, всего будет 4 колонки */
 }
