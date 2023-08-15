@@ -48,11 +48,13 @@ body {
 /* Grid контейнер */
 .wrapper {
   display: grid;
-  /* объявление шаблона колонок */
-  grid-template-columns: 200px 100px; /* 2 колонки, первая 200px, вторая 100px */
-  gap: 10px 20px; /* отступ по горизонтали(строки) 10px, по вертикали(столбцы) 20px */
-  gap: 15px; /* отступ везде по 15px */;
-  grid-template-rows: 100px 100px; /* оттсуп по строкам (высота элемента*/
-  grid-auto-rows: 200px; /* элементы не попавшие под grid-template-rows, примут 200px высоту */
-  grid-auto-rows: 50px 200px; /* чередование, 50px затем 200px и тд */
+  grid-template-columns: 200px 100px;
+  gap: 15px;
+}
+
+.wrapper {
+  grid-auto-flow: row; /* по умолчанию */
+  grid-auto-flow: column;
+  grid-template-rows: 200px 100px;
+
 }
