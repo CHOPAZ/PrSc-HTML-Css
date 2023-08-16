@@ -47,30 +47,17 @@ body {
 
 /* Grid контейнер */
 
-/* Положение элементов */
+/* Именнованые линии*/
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  /* В шабломе, в любом месте между колонками можно задать именнованное значение */
+  grid-template-columns: [s-left] 200px 200px [sidebar] 1fr 1fr [s-right];
+  grid-template-rows: [s-start] repeat(3, 200px) [s-end];
   gap: 15px;
 }
 
-.item_11 {
-  grid-column-start: 3; /* элемент начсинается с 3-й линии */
-  grid-column-end: 7; /* элемент закончится на 8 линии */
-  /* grid-column-end: -1; аналдогичная запись для 7 */
-  grid-column: 1 / -1; /* короткая запись */
+
+.item_9 {
+  grid-column: s-left / sidebar;
+  grid-row: s-start / s-end;
 }
-
-.item_11 {
-  grid-column: 1 / span 3; /* начинается от 1 линии и занимает 3 колонки */
-  grid-column: span 2 / 3; /* занимает 2 колнки и заканчивается на 3 линии */
-}
-
-/* Особонность */
-.item_11 {
-  grid-row: 1 / 3; /* за ймет от 1 линии до 3 */
-  grid-row: 1 / -1; /* эффекта нет, необходимо явно задать шаблон строк grid-template-rows */
-}
-
-
