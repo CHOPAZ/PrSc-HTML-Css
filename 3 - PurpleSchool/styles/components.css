@@ -194,3 +194,51 @@ background-color: var(--color-primary-hover);
     width: 100%;
   }
 }
+
+/* chip */
+
+.chip_wrapper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.chip {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 400;
+  padding: 8px 16px;
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--border-10);
+  background: none;
+}
+
+.chip:hover {
+  background-color: var(--color-bg-medium);
+  cursor: pointer;
+}
+
+.chip_active {
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.chip_active:hover {
+  background-color: var(--color-primary);
+}
+
+
+/* courses-card */
+
+.courses_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+.course-card {
+  background-color: var(--color-bg-medium);
+  border-radius: var(--border-10);
+  color: var(--color-text);
+}
