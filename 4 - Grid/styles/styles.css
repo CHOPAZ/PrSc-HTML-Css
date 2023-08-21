@@ -47,29 +47,24 @@ body {
 
 /* Grid контейнер */
 
-/* Justify и align
+/* Заполнение grid
+
 */
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-template-rows: repeat(10, 100px);
-  gap: 15px;
-  /* justify - основная ось
-     aling - неосновная ось
-
-     Типы выравниваяния 
-     1. items - ячейки
-     2. content - как весь грид распологается в контейнере
-     3. self - переопределяет поведение конкретной ячейки ячейки
-  */
-  justify-items: stretch; /* по умолчанию */
-  justify-items: center; /* ячейки расположаться по середине разметки сетки колонок */
-  align-items: start;
-  justify-content: end;
-
+  grid-template-columns: repeat(3, 100px);
+  /* grid-template-rows: repeat(3, 100px); */
+  grid-auto-flow: dense; /* заполняет пустые места, в случае если туда влезает какой-то элемент */
 }
 
-.item_9 {
-  justify-self: end;
+.item_3 {
+  grid-column: 1 / -1;
 }
 
+.item_4 {
+  grid-column: span 2;
+}
+
+.item_5 {
+  grid-column: span 2;
+}
