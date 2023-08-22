@@ -204,6 +204,12 @@ background-color: var(--color-primary-hover);
   overflow: hidden; /* при изменении адаптива, элементы будут скрываться */
   overflow: scroll; /* при изменении адаптива, элементы будут скрываться и появится скролбар */
   margin-right: -24px; /* что бы убрать справа паддинг в 24px, и при изменении адаптива, контент доходил до конца viewport */
+  scrollbar-width: none; /* реализовано только в FireFox */
+}
+
+/* убирает скролбар у чипов */
+.chip_wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .chip {
