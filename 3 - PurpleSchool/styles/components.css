@@ -201,6 +201,9 @@ background-color: var(--color-primary-hover);
   display: flex;
   gap: 24px;
   margin-bottom: 32px;
+  overflow: hidden; /* при изменении адаптива, элементы будут скрываться */
+  overflow: scroll; /* при изменении адаптива, элементы будут скрываться и появится скролбар */
+  margin-right: -24px; /* что бы убрать справа паддинг в 24px, и при изменении адаптива, контент доходил до конца viewport */
 }
 
 .chip {
@@ -212,6 +215,7 @@ background-color: var(--color-primary-hover);
   border: 1px solid var(--color-stroke);
   border-radius: var(--border-10);
   background: none;
+  white-space: nowrap; /* слова не будут переноситься на новую строку */
 }
 
 .chip:hover {
