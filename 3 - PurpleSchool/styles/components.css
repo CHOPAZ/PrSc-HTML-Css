@@ -248,7 +248,8 @@ background-color: var(--color-primary-hover);
 
 .courses_wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 80px;
 }
 
@@ -311,3 +312,18 @@ background-color: var(--color-primary-hover);
   gap: 4px;
 }
 
+/* адаптив карточек */
+
+
+/* для адаптива лучше использовать auto-fit, и min-max (строчка 252) */
+/* @media (max-width: 1200px) {
+  .courses_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 740px) {
+  .courses_wrapper {
+    grid-template-columns: 1fr;
+  }
+} */
