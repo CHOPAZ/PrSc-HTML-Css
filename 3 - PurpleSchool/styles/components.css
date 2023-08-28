@@ -122,8 +122,19 @@ background-color: var(--color-primary-hover);
   border-radius: var(--border-10);
 }
 
+.card_light {
+  background-color: var(--color-bg-light);
+}
+
 .card_32 {
   padding: 32px;
+}
+
+.card_48x24 {
+ padding: 48px 24px;
+}
+.card_24x32 {
+ padding: 24px 32px;
 }
 
 /* post-wrapper */
@@ -311,19 +322,3 @@ background-color: var(--color-primary-hover);
   align-items: center;
   gap: 4px;
 }
-
-/* адаптив карточек */
-
-
-/* для адаптива лучше использовать auto-fit, и min-max (строчка 252) */
-/* @media (max-width: 1200px) {
-  .courses_wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 740px) {
-  .courses_wrapper {
-    grid-template-columns: 1fr;
-  }
-} */

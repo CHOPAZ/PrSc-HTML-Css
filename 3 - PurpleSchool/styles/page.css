@@ -70,3 +70,40 @@
 .btn__more {
   text-align: center;
 }
+
+
+/* Блок нам доверяют */
+
+.trust-wrapper {
+  display: grid;
+  grid-template-columns: [start] 1fr 1fr [second] 1fr [end];
+  gap: 0 75px;
+}
+
+.trust-wrapper__top {
+  grid-column: start / end;
+}
+
+.trust-wrapper__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.trust-wrapper__num {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 120%;
+  background: var(--color-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.trust-wrapper__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-text);
+}
