@@ -201,10 +201,10 @@ background-color: var(--color-primary-hover);
   display: flex;
   gap: 24px;
   margin-bottom: 32px;
-  overflow: hidden; /* при изменении адаптива, элементы будут скрываться */
-  overflow: scroll; /* при изменении адаптива, элементы будут скрываться и появится скролбар */
-  margin-right: -24px; /* что бы убрать справа паддинг в 24px, и при изменении адаптива, контент доходил до конца viewport */
-  scrollbar-width: none; /* реализовано только в FireFox */
+  overflow: hidden;
+  overflow: scroll;
+  margin-right: -24px; 
+  scrollbar-width: none;
 }
 
 /* убирает скролбар у чипов */
@@ -221,7 +221,7 @@ background-color: var(--color-primary-hover);
   border: 1px solid var(--color-stroke);
   border-radius: var(--border-10);
   background: none;
-  white-space: nowrap; /* слова не будут переноситься на новую строку */
+  white-space: nowrap;
 }
 
 .chip:hover {
@@ -241,10 +241,9 @@ background-color: var(--color-primary-hover);
 
 /* courses-card */
 
-.course-card__cover {
-  height: 173px;
-  background-image: url("../img/cover.png");
-  background-size: contain;
+.course-card__cover img {
+  width: 100%;
+  border-radius: var(--border-10) var(--border-10) 0 0;
 }
 
 .courses_wrapper {
@@ -312,4 +311,3 @@ background-color: var(--color-primary-hover);
   gap: 4px;
 }
 
-/*  */
